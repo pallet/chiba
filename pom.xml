@@ -4,7 +4,7 @@
   <parent>
     <groupId>org.cloudhoist</groupId>
     <artifactId>parent-pom</artifactId>
-    <version>0.1.0-SNAPSHOT</version>
+    <version>0.1.0</version>
   </parent>
   <groupId>org.cloudhoist</groupId>
   <artifactId>chiba</artifactId>
@@ -22,6 +22,19 @@
       <plugin>
         <groupId>org.cloudhoist.plugin</groupId>
         <artifactId>zi</artifactId>
+        <configuration>
+          <codoxTargetDirectory>doc/api/${chiba.doc.version}</codoxTargetDirectory>
+          <codoxApiVersion>${chiba.doc.version}</codoxApiVersion>
+          <codoxWriter>codox-md.writer/write-docs</codoxWriter>
+          <marginaliaTargetDirectory>doc</marginaliaTargetDirectory>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-site-plugin</artifactId>
+        <version>3.0</version>
+        <configuration>
+          <skip>true</skip>
+        </configuration>
       </plugin>
     </plugins>
   </build>
@@ -30,12 +43,11 @@
     <dependency>
       <groupId>bultitude</groupId>
       <artifactId>bultitude</artifactId>
-      <version>0.1.1</version>
+      <version>0.1.2</version>
     </dependency>
   </dependencies>
 
   <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <clojure.version>1.2.1</clojure.version>
+    <chiba.doc.version>0.1</chiba.doc.version>
   </properties>
 </project>
