@@ -27,7 +27,7 @@ an exclusion regex:
 Add the folowing to your `project.clj`:
 
 ```clojure
-:dependencies [[org.cloudhoist/chiba "0.1.0"]]
+:dependencies [[org.cloudhoist/chiba "0.1.1"]]
 :repositories {"sonatype" "http://oss.sonatype.org/content/repositories/releases"}
 ```
 ### pom.xml
@@ -38,8 +38,8 @@ Add the following to your `pom.xml`.
 <dependencies>
   <dependency>
     <groupId>org.cloudhoist</groupId>
-    <artifactId>pallet</artifactId>
-    <version>0.6.7</version>
+    <artifactId>chiba</artifactId>
+    <version>0.1.1</version>
   </dependency>
 <dependencies>
 
