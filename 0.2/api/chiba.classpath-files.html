@@ -1,0 +1,63 @@
+<html lang="en">
+  <head>
+    <title>chiba.classpath-files documentation</title>
+    <link href="css/default.css" type="text/css" rel="stylesheet" />
+    <link href="css/codox-md.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/page_effects.js"></script>
+  </head>
+  <body>
+    <header>
+      <div id="header">
+        <h1 class="project-title">Chiba 0.2.0 API documentation</h1>
+      </div>
+    </header>
+    <navigation>
+      <div id="namespaces" class="sidebar">
+        <h3>Namespaces</h3>
+        <ul class="ns-links">
+          <li class="ns-list"><a class="ns-link ns-name" href="chiba.classpath-files.html">chiba.classpath-files</a></li><li class="ns-list"><a class="ns-link ns-name" href="chiba.plugin.html">chiba.plugin</a></li>
+        </ul>
+      </div>
+      <div id="vars" class="sidebar">
+        <h3>Public Vars</h3>
+        <ul class="ns-var-links">
+          <li class="ns-var-list"><a class="ns-var-link ns-var-name" href="chiba.classpath-files.html#var-file-%3Efiles">file-&gt;files</a></li><li class="ns-var-list"><a class="ns-var-link ns-var-name" href="chiba.classpath-files.html#var-files-on-classpath">files-on-classpath</a></li>
+        </ul>
+      </div>
+    </navigation>
+    <article>
+      <div id="content" class="namespace-docs">
+        <h2 class="namespace-title">chiba.classpath-files documentation</h2>
+        <div class="doc"><p>Find files on the classpath</p>
+</div>
+        <div class="ns-vars">
+          <div class="public">
+            <h3><a id="var-file-%3Efiles" class="source var-name" href="https://github.com/pallet/java-crate/blob/develop/src/chiba/classpath_files.clj#L15">file-&gt;files</a></h3>
+            <h4 class="var-type fn" id="var-type">fn</h4>
+            <div class="usage">[prefix f]</div>
+            
+            
+            <div class="doc"><p>Map a classpath file to the files it contains. <code>prefix</code> allows for reducing
+the file search space. For large directories on the classpath, passing a
+<code>prefix</code> can provide significant efficiency gains.</p>
+</div>
+          </div><div class="public">
+            <h3><a id="var-files-on-classpath" class="source var-name" href="https://github.com/pallet/java-crate/blob/develop/src/chiba/classpath_files.clj#L40">files-on-classpath</a></h3>
+            <h4 class="var-type fn" id="var-type">fn</h4>
+            <div class="usage">[&amp; {:keys [prefix classpath], :or {classpath (classpath-files)}}]</div>
+            
+            
+            <div class="doc"><p>Return classpath relative file paths matching the given prefix both on disk
+and inside jar files.  If :prefix is passed, only return files that begin with
+this prefix.  If :classpath is passed, it should be a seq of File objects or a
+classpath string.  If it is not passed, default to java.class.path and the
+current classloader, assuming it is a URL classloader.</p>
+</div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </body>
+
+</html>

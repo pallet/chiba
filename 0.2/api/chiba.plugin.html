@@ -1,0 +1,70 @@
+<html lang="en">
+  <head>
+    <title>chiba.plugin documentation</title>
+    <link href="css/default.css" type="text/css" rel="stylesheet" />
+    <link href="css/codox-md.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/page_effects.js"></script>
+  </head>
+  <body>
+    <header>
+      <div id="header">
+        <h1 class="project-title">Chiba 0.2.0 API documentation</h1>
+      </div>
+    </header>
+    <navigation>
+      <div id="namespaces" class="sidebar">
+        <h3>Namespaces</h3>
+        <ul class="ns-links">
+          <li class="ns-list"><a class="ns-link ns-name" href="chiba.classpath-files.html">chiba.classpath-files</a></li><li class="ns-list"><a class="ns-link ns-name" href="chiba.plugin.html">chiba.plugin</a></li>
+        </ul>
+      </div>
+      <div id="vars" class="sidebar">
+        <h3>Public Vars</h3>
+        <ul class="ns-var-links">
+          <li class="ns-var-list"><a class="ns-var-link ns-var-name" href="chiba.plugin.html#var-backend">backend</a></li><li class="ns-var-list"><a class="ns-var-link ns-var-name" href="chiba.plugin.html#var-data-plugins">data-plugins</a></li><li class="ns-var-list"><a class="ns-var-link ns-var-name" href="chiba.plugin.html#var-plugins">plugins</a></li>
+        </ul>
+      </div>
+    </navigation>
+    <article>
+      <div id="content" class="namespace-docs">
+        <h2 class="namespace-title">chiba.plugin documentation</h2>
+        <div class="doc"><p>Plugin through namespace discovery</p>
+</div>
+        <div class="ns-vars">
+          <div class="public">
+            <h3><a id="var-backend" class="source var-name" href="https://github.com/pallet/java-crate/blob/develop/src/chiba/plugin.clj#L22">backend</a></h3>
+            <h4 class="var-type fn" id="var-type">fn</h4>
+            <div class="usage">[plugins preferrences]</div>
+            
+            
+            <div class="doc"><p>Given a set of plugins, and a sequence of preferred plugins, returns
+the first preferred plugin, or the first plugin if no preferred plugins
+are found</p>
+</div>
+          </div><div class="public">
+            <h3><a id="var-data-plugins" class="source var-name" href="https://github.com/pallet/java-crate/blob/develop/src/chiba/plugin.clj#L32">data-plugins</a></h3>
+            <h4 class="var-type fn" id="var-type">fn</h4>
+            <div class="usage">[path-prefix exclusion-regex]</div><div class="usage">[path-prefix]</div>
+            
+            
+            <div class="doc"><p>Find the available plugin resources. Returns a set of all paths with the
+given prefix that do not match exclusion-regex.  The separator in both prefix
+and exckusion regex is the file separator, /.</p>
+</div>
+          </div><div class="public">
+            <h3><a id="var-plugins" class="source var-name" href="https://github.com/pallet/java-crate/blob/develop/src/chiba/plugin.clj#L7">plugins</a></h3>
+            <h4 class="var-type fn" id="var-type">fn</h4>
+            <div class="usage">[ns-prefix exclusion-regex]</div><div class="usage">[ns-prefix]</div>
+            
+            
+            <div class="doc"><p>Find the available plugin namespaces. Returns a set of all namespaces with
+the given prefix that do not match exclusion-regex.</p>
+</div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </body>
+
+</html>
