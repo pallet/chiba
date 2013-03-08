@@ -1,3 +1,9 @@
+[Repository](https://github.com/pallet/chiba) &#xb7;
+[Issues](https://github.com/pallet/chiba/issues) &#xb7;
+[API docs](http://palletops.com/chiba/0.2/api) &#xb7;
+[Annotated source](http://palletops.com/chiba/0.2/annotated/uberdoc.html) &#xb7;
+[Release Notes](https://github.com/pallet/chiba/blob/develop/ReleaseNotes.md)
+
 # chiba
 
 Chiba is no sprawl, just a small library to help you to augment your code with
