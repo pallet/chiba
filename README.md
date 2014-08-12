@@ -40,7 +40,7 @@ regex:
 Add the folowing to your `project.clj`:
 
 ```clojure
-:dependencies [[com.palletops/chiba "0.2.0"]]
+:dependencies [[com.palletops/chiba "0.2.1"]]
 ```
 
 ## License

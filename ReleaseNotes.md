@@ -1,6 +1,9 @@
-# Release Notes
+## 0.2.1
 
-Current release 0.2.0.
+- Move clojure to :provided profile
+
+- Fix finding of data plugins
+  Directories and jar files were not being correctly expanded.
 
 ## 0.2.0
 
