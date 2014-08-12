@@ -6,4 +6,5 @@
        :aliases {"marg" ["marg" "-d" "doc/0.2/annotated/"],
                  "codox" ["doc"],
                  "doc" ["do" "codox," "marg"]}}
- :dev {:plugins [[lein-pallet-release "RELEASE"]]}}
+ :dev {:plugins [[lein-pallet-release "RELEASE"]]}
+ :provided {:dependencies [[org.clojure/clojure "1.4.0"]]}}
